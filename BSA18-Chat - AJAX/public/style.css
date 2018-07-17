@@ -1,0 +1,162 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { height: 100%;}
+body { font: 13px Helvetica, Arial; height: 100%; }
+form { background: #000; padding: 10px 10vw; position: fixed; bottom: 0; width: 100%; }
+form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
+form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+#messages { list-style-type: none; margin: 0; padding: 10px;}
+#messages li { padding: 5px 10px; }
+/* #messages li:nth-child(odd) { background: #eee; } */
+#messages { margin-bottom: 40px }
+.main-content {
+    height: 90%;
+}
+
+#content-messages {
+    overflow-y: scroll;
+}
+
+div.container {
+    height: 100%;
+}
+
+div.row {
+    height: 100%;
+}
+
+
+/* ----------------USERS--------------- */
+
+.users {
+    background-color: grey;
+}
+
+.profile-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    width: 93%;
+    padding: 5px 0;
+    font-size: 0.8rem;
+    margin: 10px auto 0;
+}
+
+.profile-card .container{
+    padding: 0;
+}
+
+.user-card {
+    margin-top: 5px;
+}
+
+.user-info{
+    text-align: center;
+    justify-content: space-between;
+    padding: 5px 40px;
+}
+
+.user-info img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #4e555b;
+}
+
+.user-info .name-post-text {
+    padding-left: 10px;
+    text-align: left;
+}
+
+.user-info .name-post-text div:first-child {
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+.user-info .name-post-text div:last-child {
+    font-size: 0.6rem;
+    font-size: 0.6rem;
+    color: #4e555b;
+    max-height: 10%;
+}
+
+/* ------------Modal------------- */
+.modal {
+    display: block;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px 5%;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal input {
+    margin: 5px 0;
+}
+
+#typing-users-info {
+    font-size: 14px;
+    font-style: italic;
+    color: white;
+    padding-bottom: 5px;
+}
+
+.indicator {
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+    
+    margin: 0 auto;
+}
+.online {
+    background-color: green;
+}
+.appeared {
+    background-color: greenyellow;
+}
+.offline {
+    background-color: red;
+}
+.just-left {
+    background-color: orange;
+}
+.status {
+    display: block;
+    margin-top: 5px;
+    font-size: 10px;
+}
+.connect-info {
+    max-width: 40px;
+    min-width: 40px;
+}
+#messages li.mentioned {
+    background-color:royalblue;
+    color: white;
+}

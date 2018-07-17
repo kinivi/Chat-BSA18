@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>AJAX chat</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- The Modal -->
+  <div id="modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <input type="text" name="name" id="name" placeholder="Real name">
+      <input type="text" name="nikname" id="nick" placeholder="Nikname">
+
+      <button class="btn btn-success" id="enter-user">Save</button>
+
+    </div>
+
+
+  </div>
+
+  <section class="main-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-4 users" id="usersContainer">
+
+        </div>
+        <div class="col-8" id="content-messages">
+          <ul id="messages"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <form action="">
+    <input id="text" autocomplete="off" />
+    <button id="submitText" type="submit">Send</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
